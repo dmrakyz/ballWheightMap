@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+/* Container for buttons */
+#controls {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 0vw;
+}
+
+/* Specific styles for each button */
+#jumpButton {
+    position: absolute;
+    bottom: 5vh;
+    left: 25vw;
+    padding: 15px 30px;
+    font-size: 12px;
+}
+
+#moveForwardButton {
+    position: absolute;
+    bottom: 5vh;
+    right: 25vw;
+    padding: 15px 30px;
+    font-size: 12px;
+}
+
+#toggleCameraButton {
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    padding: 10px 20px;
+    font-size: 8px;
+}
+
+/* General button styles */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+/* Active button state */
+button:active {
+    background-color: #555;
+}

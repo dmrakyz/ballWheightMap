@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="manifest" href="/manifest.json">
+<title>:p</title>
+<link rel="stylesheet" href="Zstyles.css">
+<script type="importmap">
+  {
+    "imports": {
+      "three": "/library/three.module.js",
+		"cannon": "/library/cannon-es.js"
+  }
+}
+</script>
+</head>
+<body>
+<div id="controls">
+<button id="moveForwardButton">Forward</button>
+<button id="jumpButton">Jump</button>
+</div>
+<button id="toggleCameraButton">camera</button>
+<script type="module" src="/main.js"></script>
+<script>
+if (screen.orientation) {
+    screen.orientation.lock('landscape').catch(function(error) {
+        console.log("Orientation lock failed: ", error);
+    });
+}
+</script>
+</body>
+</html>
