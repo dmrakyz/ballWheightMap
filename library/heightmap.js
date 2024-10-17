@@ -1,6 +1,6 @@
 // heightmap.js
-import * as THREE from '/three.module.js';
-import * as CANNON from '/cannon-es.js';
+import * as THREE from 'three';
+import * as CANNON from 'cannon';
 
 export function createHeightmap(scene, heightmapPath, scale) {
     const loader = new THREE.TextureLoader();
